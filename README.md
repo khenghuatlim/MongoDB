@@ -75,6 +75,7 @@ Following setup, will have
 
 1. Assumed you have setup MongoDB on 3 instances/boxes.
 
+   FYI - Arbiters are mongod members that are part of a replica set but do not hold data. It functions to do select order access to a shared resources among asyn requests.
    I assumed your IP would be
 
 ```
@@ -82,8 +83,6 @@ Following setup, will have
     172.31.16.31 - will be secondary
     172.31.16.32 - will be for arbiter
 ```
-
-    FYI - Arbiters are mongod members that are part of a replica set but do not hold data. It functions to do select order access to a shared resources among asyn requests
 
 2. Ensure the port (default 27017), that these 3 members able to communicate/visible each other. You may "mongosh" to login each other members.
 
